@@ -1,0 +1,7 @@
+car
+truck
+bike
+bus
+others
+ambulance
+upside_down

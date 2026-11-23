@@ -1,0 +1,24 @@
+mongodb:
+  uri: "mongodb://localhost:27017/"
+  database: "my_project"
+  collections:
+    reports: "reports"
+    clients: "clients"
+
+client:
+  name: "Biswa"
+
+api:
+  host: "0.0.0.0"
+  port: 5050
+  debug: false
+
+gui:
+  enabled: true
+  window_title: "Alert System - Live Monitor"
+  tile_width: 640
+  tile_height: 360
+  max_cols: 3                     # Auto-wrap cameras after N columns
+  font_scale: 0.55
+  show_fps: true
+  show_stats: true

@@ -1,0 +1,12 @@
+{
+  "cameras": [
+    {
+      "id": "cam_01",
+      "name": "Cam 01",
+      "location": "Tambaram",
+      "source": "/home/mani/Mani/Project/Research_support/test_code/car_fall.mp4",
+      "type": "video",
+      "enabled": true
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+cameras:
+  # - id: cam_01
+  #   name: "Gate_01"
+  #   location: "Gate_01"
+  #   source: "rtsp://admin:password@192.168.1.101:554/stream"
+  #   type: rtsp                    # rtsp | video | webcam
+
+  - id: cam_02
+    name: "Navalur"
+    location: "Navalur"
+    source: "test.mp4"
+    type: video
+
+  # - id: cam_03
+  #   name: "Parking_01"
+  #   location: "Parking_01"
+  #   source: 0                     # webcam index
+  #   type: webcam

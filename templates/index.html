@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detection Alerts</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="logo"></span>Detection Alerts</div>
+    <nav class="tabs">
+      <button class="tab active" data-view="dashboard">Dashboard</button>
+      <button class="tab" data-view="violations">Violations <span id="tab-badge" class="badge hidden">0</span></button>
+      <button class="tab" data-view="cameras">Cameras</button>
+      <button class="tab" data-view="model">Model</button>
+    </nav>
+    <div class="engine">
+      <span id="engine-state" class="pill">…</span>
+      <button id="engine-toggle" class="btn">…</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= DASHBOARD ================= -->
+    <section id="view-dashboard" class="view active">
+      <div class="dash">
+        <div class="grid-wrap">
+          <div id="focus-bar" class="focus-bar hidden">
+            <button id="focus-back" class="btn">← All cameras</button>
+            <b id="focus-title"></b>
+            <span class="muted small">Double-click, Esc or browser Back to return</span>
+          </div>
+          <div id="camera-grid" class="grid"></div>
+          <div id="grid-empty" class="empty hidden">
+            <p>No cameras configured yet.</p>
+            <button class="btn primary" data-goto="cameras">Add a camera</button>
+          </div>
+        </div>
+
+        <aside class="alerts-panel">
+          <div class="panel-head">
+            <h2>Alerts <span id="alert-new-count" class="badge hidden">0</span></h2>
+            <div class="panel-tools">
+              <select id="alert-filter-camera" title="Filter by camera"><option value="">All cameras</option></select>
+              <label class="check" title="Play a sound on new alerts"><input type="checkbox" id="sound-toggle"> Sound</label>
+            </div>
+          </div>
+          <div class="panel-actions">
+            <button id="ack-all" class="btn small">Acknowledge all</button>
+            <button id="clear-alerts" class="btn small danger-ghost">Clear all</button>
+          </div>
+          <p id="alert-empty" class="empty small hidden">No alerts yet.</p>
+          <ul id="alert-list" class="alert-list"></ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= VIOLATIONS ================= -->
+    <section id="view-violations" class="view">
+      <div class="page wide">
+        <div class="page-head">
+          <div>
+            <h1>Violations</h1>
+            <p id="v-summary" class="muted">…</p>
+          </div>
+          <div class="row-tools">
+            <button id="v-ack-all" class="btn">Acknowledge all</button>
+            <a id="v-export" class="btn primary" href="/api/alerts/export.csv" download>Export CSV</a>
+          </div>
+        </div>
+
+        <div class="filters">
+          <label class="field">Camera <select id="v-camera"><option value="">All cameras</option></select></label>
+          <label class="field">Violation <select id="v-type"><option value="">All types</option></select></label>
+          <label class="field">Status
+            <select id="v-status">
+              <option value="">All</option>
+              <option value="new">New</option>
+              <option value="acknowledged">Acknowledged</option>
+            </select>
+          </label>
+          <label class="field">From <input type="date" id="v-from"></label>
+          <label class="field">To <input type="date" id="v-to"></label>
+          <button id="v-reset" class="btn">Reset filters</button>
+        </div>
+
+        <div class="table-wrap">
+          <table class="table vtable">
+            <thead>
+              <tr>
+                <th>#</th><th>Image</th><th>Date &amp; time</th><th>Camera</th><th>Location</th>
+                <th>Violation</th><th>Confidence</th><th>Track</th><th>Status</th><th></th>
+              </tr>
+            </thead>
+            <tbody id="v-rows"></tbody>
+          </table>
+        </div>
+        <p id="v-empty" class="empty hidden">No violations match these filters.</p>
+
+        <div class="pager">
+          <button id="v-prev" class="btn small">‹ Prev</button>
+          <span id="v-page" class="muted"></span>
+          <button id="v-next" class="btn small">Next ›</button>
+          <span class="spacer"></span>
+          <label class="muted small">Rows per page
+            <select id="v-size"><option>25</option><option>50</option><option>100</option></select>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CAMERAS ================= -->
+    <section id="view-cameras" class="view">
+      <div class="page">
+        <div class="page-head">
+          <div>
+            <h1>Cameras</h1>
+            <p class="muted">Video files, RTSP streams or webcams. Relative file paths are resolved from the project folder.</p>
+          </div>
+          <button id="add-camera" class="btn primary">+ Add camera</button>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead><tr><th>Name</th><th>Location</th><th>Type</th><th>Source</th><th>Enabled</th><th></th></tr></thead>
+            <tbody id="camera-rows"></tbody>
+          </table>
+        </div>
+        <p id="cameras-empty" class="empty hidden">No cameras yet - click <b>Add camera</b>.</p>
+      </div>
+    </section>
+
+    <!-- ================= MODEL ================= -->
+    <section id="view-model" class="view">
+      <form id="model-form" class="page" autocomplete="off">
+        <div class="page-head">
+          <div>
+            <h1>Model</h1>
+            <p class="muted">Saving restarts detection automatically if it is running.</p>
+          </div>
+          <button type="submit" class="btn primary">Save &amp; apply</button>
+        </div>
+        <div id="model-warnings"></div>
+
+        <div class="cards">
+          <fieldset class="card">
+            <legend>Model file</legend>
+            <label class="field wide">Model path (.pt)
+              <input name="path" placeholder="e.g. models/car_fall.pt">
+            </label>
+            <label class="field">Device
+              <select name="device"><option>auto</option><option>cpu</option><option>cuda</option><option>mps</option></select>
+            </label>
+            <label class="field">Image size
+              <input name="imgsz" type="number" min="32" max="4096" step="32">
+            </label>
+            <label class="check"><input type="checkbox" name="half"> FP16 (half precision, GPU only)</label>
+          </fieldset>
+
+          <fieldset class="card">
+            <legend>Detection</legend>
+            <label class="field">Detection confidence
+              <span class="range"><input name="conf_threshold" type="range" min="0.05" max="1" step="0.01"><output></output></span>
+            </label>
+            <label class="field">NMS IoU
+              <span class="range"><input name="iou_threshold" type="range" min="0.05" max="1" step="0.01"><output></output></span>
+            </label>
+            <label class="check"><input type="checkbox" name="tracking.enabled"> Track objects (one alert per vehicle)</label>
+            <label class="field">Tracker
+              <select name="tracking.method"><option>bytetrack</option><option>botsort</option></select>
+            </label>
+          </fieldset>
+
+          <fieldset class="card">
+            <legend>Alert rules</legend>
+            <label class="field">Alert confidence threshold
+              <span class="range"><input name="alert.min_confidence" type="range" min="0.05" max="1" step="0.01"><output></output></span>
+            </label>
+            <label class="field">Confirm after N consecutive frames
+              <input name="alert.min_frames" type="number" min="1" max="1000">
+            </label>
+            <label class="field">Cooldown per class (seconds)
+              <input name="alert.cooldown_seconds" type="number" min="0" step="1">
+            </label>
+          </fieldset>
+        </div>
+
+        <fieldset class="card">
+          <legend>Classes</legend>
+          <div class="row-tools">
+            <button type="button" id="load-classes" class="btn">Load classes from model file</button>
+            <button type="button" id="add-class" class="btn">+ Add class</button>
+            <span class="muted small">Tick <b>Alert</b> for classes that should raise an alert.</span>
+          </div>
+          <div class="table-wrap">
+            <table class="table">
+              <thead><tr><th>Class name</th><th>Colour</th><th>Show</th><th>Alert</th><th>Alert label</th><th></th></tr></thead>
+              <tbody id="class-rows"></tbody>
+            </table>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <!-- camera add/edit dialog -->
+  <dialog id="camera-dialog">
+    <form id="camera-form" method="dialog" autocomplete="off">
+      <h2 id="camera-dialog-title">Add camera</h2>
+      <label class="field">Name <input name="name" required placeholder="Gate_01"></label>
+      <label class="field">Location <input name="location" placeholder="Main gate"></label>
+      <label class="field">Type
+        <select name="type">
+          <option value="video">Video file</option>
+          <option value="rtsp">RTSP stream</option>
+          <option value="webcam">Webcam</option>
+        </select>
+      </label>
+      <label class="field">Source <input name="source" required></label>
+      <label class="check"><input type="checkbox" name="enabled" checked> Enabled</label>
+      <div id="camera-test-result" class="test-result hidden"></div>
+      <div class="dialog-actions">
+        <button type="button" id="camera-test" class="btn">Test connection</button>
+        <span class="spacer"></span>
+        <button type="button" class="btn" data-close>Cancel</button>
+        <button type="submit" class="btn primary">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- alert image viewer -->
+  <dialog id="image-dialog" class="image-dialog">
+    <img id="image-dialog-img" alt="">
+    <div class="image-caption">
+      <div id="image-dialog-caption"></div>
+      <button type="button" class="btn" data-close>Close</button>
+    </div>
+  </dialog>
+
+  <div id="toasts" class="toasts"></div>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

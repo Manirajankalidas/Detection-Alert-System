@@ -1,0 +1,1575 @@
+2026-05-02 16:15:24 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-02 16:15:24 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-02 16:15:24 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 16:15:24 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-02 16:15:24 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_local
+2026-05-02 16:15:24 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-02 16:15:24 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 16:15:24 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-02 16:15:24 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-02 16:15:24 | WARNING  | alert_manager        | Client 'Biswa' not found in DB. Reports will have null client.
+2026-05-02 16:15:24 | INFO     | stream_manager       | [cam_02] Stream thread started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-02 16:15:24 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-02 16:15:24 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-02 16:15:24 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-02 16:15:24 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-02 16:15:24 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:15:24 | INFO     | dashboard            | Dashboard initialized
+2026-05-02 16:15:24 | INFO     | dashboard            | Dashboard running. Press Q to quit.
+2026-05-02 16:15:25 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:15:25 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:15:25 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=6 | conf=0.92 | doc_id=69f5d5c50ae8c59ff4500306
+2026-05-02 16:15:25 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:15:25 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:15:26 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=2 | conf=0.95 | doc_id=69f5d5c60ae8c59ff4500307
+2026-05-02 16:15:26 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:15:26 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:15:26 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=52 | conf=0.93 | doc_id=69f5d5c60ae8c59ff4500308
+2026-05-02 16:15:26 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:15:26 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:15:26 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=81 | conf=0.93 | doc_id=69f5d5c60ae8c59ff4500309
+2026-05-02 16:15:27 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:15:27 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:15:27 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=102 | conf=0.93 | doc_id=69f5d5c70ae8c59ff450030a
+2026-05-02 16:15:27 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:15:27 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:15:27 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=126 | conf=0.95 | doc_id=69f5d5c70ae8c59ff450030b
+2026-05-02 16:15:28 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:15:28 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:15:28 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=150 | conf=0.93 | doc_id=69f5d5c80ae8c59ff450030c
+2026-05-02 16:15:28 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:15:28 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:15:28 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=171 | conf=0.94 | doc_id=69f5d5c80ae8c59ff450030d
+2026-05-02 16:15:28 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:15:28 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:15:29 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=194 | conf=0.94 | doc_id=69f5d5c90ae8c59ff450030e
+2026-05-02 16:15:29 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:15:29 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:15:29 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=223 | conf=0.95 | doc_id=69f5d5c90ae8c59ff450030f
+2026-05-02 16:15:29 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:15:29 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:15:30 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=245 | conf=0.93 | doc_id=69f5d5ca0ae8c59ff4500310
+2026-05-02 16:15:30 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:15:30 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:15:30 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=271 | conf=0.92 | doc_id=69f5d5ca0ae8c59ff4500311
+2026-05-02 16:15:30 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:15:30 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:15:31 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=294 | conf=0.95 | doc_id=69f5d5cb0ae8c59ff4500312
+2026-05-02 16:15:31 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:15:31 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:15:31 | INFO     | dashboard            | Quit signal received
+2026-05-02 16:15:31 | INFO     | orchestrator         | Stopping all workers...
+2026-05-02 16:15:31 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-02 16:15:31 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-02 16:15:31 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-02 16:15:31 | INFO     | database             | MongoDB connection closed
+2026-05-02 16:15:31 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-02 16:25:26 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-02 16:25:26 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-02 16:25:26 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 16:25:26 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-02 16:25:26 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_local
+2026-05-02 16:25:26 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-02 16:25:26 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 16:25:26 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-02 16:25:26 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-02 16:25:26 | WARNING  | alert_manager        | Client 'Biswa' not found in DB. Reports will have null client.
+2026-05-02 16:25:26 | INFO     | stream_manager       | [cam_02] Stream thread started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-02 16:25:26 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-02 16:25:26 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-02 16:25:26 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-02 16:25:26 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-02 16:25:26 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:07 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-02 16:28:07 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-02 16:28:07 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 16:28:07 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-02 16:28:07 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_local
+2026-05-02 16:28:07 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-02 16:28:07 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 16:28:07 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-02 16:28:07 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-02 16:28:07 | WARNING  | alert_manager        | Client 'Biswa' not found in DB. Reports will have null client.
+2026-05-02 16:28:07 | INFO     | stream_manager       | [cam_02] Stream thread started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-02 16:28:07 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-02 16:28:07 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-02 16:28:07 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-02 16:28:07 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-02 16:28:07 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:07 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-02 16:28:07 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-02 16:28:08 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:08 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:08 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=8 | conf=0.94 | doc_id=69f5d8c083074b84e03f1f9c
+2026-05-02 16:28:08 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:08 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:09 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=35 | conf=0.93 | doc_id=69f5d8c183074b84e03f1f9d
+2026-05-02 16:28:09 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:09 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:09 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=62 | conf=0.94 | doc_id=69f5d8c183074b84e03f1f9e
+2026-05-02 16:28:09 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:09 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:10 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=89 | conf=0.95 | doc_id=69f5d8c283074b84e03f1f9f
+2026-05-02 16:28:10 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:10 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:10 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=111 | conf=0.92 | doc_id=69f5d8c283074b84e03f1fa0
+2026-05-02 16:28:10 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:10 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:10 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=136 | conf=0.93 | doc_id=69f5d8c283074b84e03f1fa1
+2026-05-02 16:28:10 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:10 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:11 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=164 | conf=0.94 | doc_id=69f5d8c383074b84e03f1fa2
+2026-05-02 16:28:11 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:11 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:11 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=183 | conf=0.94 | doc_id=69f5d8c383074b84e03f1fa3
+2026-05-02 16:28:11 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:11 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:12 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=208 | conf=0.94 | doc_id=69f5d8c483074b84e03f1fa4
+2026-05-02 16:28:12 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:12 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:12 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=234 | conf=0.94 | doc_id=69f5d8c483074b84e03f1fa5
+2026-05-02 16:28:12 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:12 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:13 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=269 | conf=0.93 | doc_id=69f5d8c583074b84e03f1fa6
+2026-05-02 16:28:13 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:13 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:13 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=299 | conf=0.95 | doc_id=69f5d8c583074b84e03f1fa7
+2026-05-02 16:28:13 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:13 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:14 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=322 | conf=0.94 | doc_id=69f5d8c683074b84e03f1fa8
+2026-05-02 16:28:14 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:14 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:14 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=347 | conf=0.94 | doc_id=69f5d8c683074b84e03f1fa9
+2026-05-02 16:28:14 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:14 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:15 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=369 | conf=0.93 | doc_id=69f5d8c783074b84e03f1faa
+2026-05-02 16:28:15 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:15 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:15 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=396 | conf=0.92 | doc_id=69f5d8c783074b84e03f1fab
+2026-05-02 16:28:15 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:15 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:16 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=413 | conf=0.95 | doc_id=69f5d8c883074b84e03f1fac
+2026-05-02 16:28:16 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:16 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:16 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=437 | conf=0.93 | doc_id=69f5d8c883074b84e03f1fad
+2026-05-02 16:28:16 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:16 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:17 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=456 | conf=0.95 | doc_id=69f5d8c983074b84e03f1fae
+2026-05-02 16:28:17 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:17 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:17 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=477 | conf=0.93 | doc_id=69f5d8c983074b84e03f1faf
+2026-05-02 16:28:17 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:17 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:18 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=499 | conf=0.93 | doc_id=69f5d8ca83074b84e03f1fb0
+2026-05-02 16:28:18 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:18 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:18 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=525 | conf=0.92 | doc_id=69f5d8ca83074b84e03f1fb1
+2026-05-02 16:28:18 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:18 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:19 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=546 | conf=0.96 | doc_id=69f5d8cb83074b84e03f1fb2
+2026-05-02 16:28:19 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:19 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:19 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=567 | conf=0.94 | doc_id=69f5d8cb83074b84e03f1fb3
+2026-05-02 16:28:19 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:19 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:20 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=600 | conf=0.95 | doc_id=69f5d8cc83074b84e03f1fb4
+2026-05-02 16:28:20 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:20 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:20 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=596 | conf=0.93 | doc_id=69f5d8cc83074b84e03f1fb5
+2026-05-02 16:28:20 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:20 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:20 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=642 | conf=0.94 | doc_id=69f5d8cc83074b84e03f1fb6
+2026-05-02 16:28:21 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:21 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:21 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=662 | conf=0.93 | doc_id=69f5d8cd83074b84e03f1fb7
+2026-05-02 16:28:21 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:21 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:22 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=684 | conf=0.95 | doc_id=69f5d8ce83074b84e03f1fb8
+2026-05-02 16:28:22 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:22 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:22 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=711 | conf=0.93 | doc_id=69f5d8ce83074b84e03f1fb9
+2026-05-02 16:28:22 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:22 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:23 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=736 | conf=0.95 | doc_id=69f5d8cf83074b84e03f1fba
+2026-05-02 16:28:23 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:23 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:23 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=753 | conf=0.94 | doc_id=69f5d8cf83074b84e03f1fbb
+2026-05-02 16:28:23 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:23 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:24 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=777 | conf=0.95 | doc_id=69f5d8d083074b84e03f1fbc
+2026-05-02 16:28:24 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:24 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:24 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=802 | conf=0.94 | doc_id=69f5d8d083074b84e03f1fbd
+2026-05-02 16:28:24 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:24 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:24 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=825 | conf=0.92 | doc_id=69f5d8d083074b84e03f1fbe
+2026-05-02 16:28:25 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:25 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:25 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=851 | conf=0.92 | doc_id=69f5d8d183074b84e03f1fbf
+2026-05-02 16:28:25 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:25 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:25 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=877 | conf=0.95 | doc_id=69f5d8d183074b84e03f1fc0
+2026-05-02 16:28:26 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:26 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:26 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=906 | conf=0.93 | doc_id=69f5d8d283074b84e03f1fc1
+2026-05-02 16:28:26 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:26 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:26 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=931 | conf=0.93 | doc_id=69f5d8d283074b84e03f1fc2
+2026-05-02 16:28:26 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:27 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:27 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=959 | conf=0.92 | doc_id=69f5d8d383074b84e03f1fc3
+2026-05-02 16:28:27 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:27 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:27 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=983 | conf=0.92 | doc_id=69f5d8d383074b84e03f1fc4
+2026-05-02 16:28:27 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:27 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:28 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=1003 | conf=0.93 | doc_id=69f5d8d483074b84e03f1fc5
+2026-05-02 16:28:28 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:28 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:28 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=1034 | conf=0.95 | doc_id=69f5d8d483074b84e03f1fc6
+2026-05-02 16:28:28 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:28 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:29 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=1063 | conf=0.93 | doc_id=69f5d8d583074b84e03f1fc7
+2026-05-02 16:28:29 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:29 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:29 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=1089 | conf=0.95 | doc_id=69f5d8d583074b84e03f1fc8
+2026-05-02 16:28:29 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:29 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:30 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=1117 | conf=0.93 | doc_id=69f5d8d683074b84e03f1fc9
+2026-05-02 16:28:30 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:30 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:30 | INFO     | alert_manager        | ALERT saved | cam=Gate_02 | class=ambulance | track_id=1145 | conf=0.95 | doc_id=69f5d8d683074b84e03f1fca
+2026-05-02 16:28:30 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 16:28:30 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 16:28:31 | INFO     | dashboard            | Exit pressed
+2026-05-02 16:28:31 | INFO     | orchestrator         | Stopping all workers...
+2026-05-02 16:28:31 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-02 16:28:31 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-02 16:28:31 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-02 16:28:31 | INFO     | database             | MongoDB connection closed
+2026-05-02 16:28:31 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-02 22:00:08 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-02 22:00:08 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-02 22:00:08 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:00:08 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-02 22:00:08 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_local
+2026-05-02 22:00:08 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-02 22:00:08 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:00:08 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-02 22:00:08 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-02 22:00:08 | ERROR    | alert_manager        | Client 'Biswa' not found in DB
+2026-05-02 22:00:08 | INFO     | stream_manager       | [cam_02] Stream thread started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-02 22:00:08 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-02 22:00:08 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-02 22:00:08 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-02 22:00:08 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-02 22:00:08 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:00:08 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-02 22:00:08 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-02 22:00:09 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:00:09 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:00:09 | INFO     | alert_manager        | ✅ ALERT saved | cam=Gate_02 | class=ambulance | track_id=4 | conf=0.94 | doc_id=69f62691fac283f36ab61b10
+2026-05-02 22:00:09 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:00:09 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:00:10 | INFO     | alert_manager        | ✅ ALERT saved | cam=Gate_02 | class=ambulance | track_id=31 | conf=0.93 | doc_id=69f62692fac283f36ab61b11
+2026-05-02 22:00:10 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:00:10 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:00:10 | INFO     | alert_manager        | ✅ ALERT saved | cam=Gate_02 | class=ambulance | track_id=63 | conf=0.94 | doc_id=69f62692fac283f36ab61b12
+2026-05-02 22:00:10 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:00:10 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:00:10 | INFO     | alert_manager        | ✅ ALERT saved | cam=Gate_02 | class=ambulance | track_id=97 | conf=0.94 | doc_id=69f62692fac283f36ab61b13
+2026-05-02 22:00:10 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:00:10 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:00:11 | INFO     | alert_manager        | ✅ ALERT saved | cam=Gate_02 | class=ambulance | track_id=128 | conf=0.93 | doc_id=69f62693fac283f36ab61b14
+2026-05-02 22:00:11 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:00:11 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:00:11 | INFO     | alert_manager        | ✅ ALERT saved | cam=Gate_02 | class=ambulance | track_id=157 | conf=0.93 | doc_id=69f62693fac283f36ab61b15
+2026-05-02 22:00:11 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:00:11 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:00:12 | INFO     | alert_manager        | ✅ ALERT saved | cam=Gate_02 | class=ambulance | track_id=185 | conf=0.93 | doc_id=69f62694fac283f36ab61b16
+2026-05-02 22:00:12 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:00:12 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:00:12 | INFO     | alert_manager        | ✅ ALERT saved | cam=Gate_02 | class=ambulance | track_id=215 | conf=0.92 | doc_id=69f62694fac283f36ab61b17
+2026-05-02 22:00:12 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:00:12 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:00:12 | INFO     | alert_manager        | ✅ ALERT saved | cam=Gate_02 | class=ambulance | track_id=244 | conf=0.92 | doc_id=69f62694fac283f36ab61b18
+2026-05-02 22:00:12 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:00:12 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:00:13 | INFO     | alert_manager        | ✅ ALERT saved | cam=Gate_02 | class=ambulance | track_id=267 | conf=0.93 | doc_id=69f62695fac283f36ab61b19
+2026-05-02 22:00:13 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:00:13 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:00:13 | INFO     | alert_manager        | ✅ ALERT saved | cam=Gate_02 | class=ambulance | track_id=295 | conf=0.92 | doc_id=69f62695fac283f36ab61b1a
+2026-05-02 22:00:13 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:00:13 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:00:14 | INFO     | alert_manager        | ✅ ALERT saved | cam=Gate_02 | class=ambulance | track_id=320 | conf=0.93 | doc_id=69f62696fac283f36ab61b1b
+2026-05-02 22:00:14 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:00:14 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:00:14 | INFO     | alert_manager        | ✅ ALERT saved | cam=Gate_02 | class=ambulance | track_id=350 | conf=0.93 | doc_id=69f62696fac283f36ab61b1c
+2026-05-02 22:00:14 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:00:14 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:00:14 | INFO     | alert_manager        | ✅ ALERT saved | cam=Gate_02 | class=ambulance | track_id=380 | conf=0.93 | doc_id=69f62696fac283f36ab61b1d
+2026-05-02 22:00:14 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:00:14 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:00:15 | INFO     | alert_manager        | ✅ ALERT saved | cam=Gate_02 | class=ambulance | track_id=407 | conf=0.94 | doc_id=69f62697fac283f36ab61b1e
+2026-05-02 22:00:15 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:00:15 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:00:15 | INFO     | alert_manager        | ✅ ALERT saved | cam=Gate_02 | class=ambulance | track_id=435 | conf=0.93 | doc_id=69f62697fac283f36ab61b1f
+2026-05-02 22:00:15 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:00:15 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:00:15 | INFO     | dashboard            | Exit pressed
+2026-05-02 22:00:15 | INFO     | orchestrator         | Stopping all workers...
+2026-05-02 22:00:15 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-02 22:00:15 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-02 22:00:15 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-02 22:00:15 | INFO     | database             | MongoDB connection closed
+2026-05-02 22:00:15 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-02 22:04:21 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-02 22:04:21 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-02 22:04:21 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:04:21 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-02 22:04:21 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_local
+2026-05-02 22:04:21 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-02 22:04:21 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:04:21 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-02 22:04:21 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-02 22:04:21 | INFO     | stream_manager       | [cam_02] Stream thread started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-02 22:04:21 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-02 22:04:21 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-02 22:04:21 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-02 22:04:21 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-02 22:04:21 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:04:21 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-02 22:04:21 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-02 22:04:21 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:04:21 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:04:22 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:04:22 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:04:22 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:04:22 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:04:23 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:04:23 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:04:23 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:04:23 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:04:23 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:04:23 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:04:24 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:04:24 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:04:24 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:04:24 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:04:25 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:04:25 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:04:25 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:04:25 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:04:26 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:04:26 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:04:26 | INFO     | dashboard            | Exit pressed
+2026-05-02 22:04:26 | INFO     | orchestrator         | Stopping all workers...
+2026-05-02 22:04:26 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-02 22:04:26 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-02 22:04:26 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-02 22:04:26 | INFO     | database             | MongoDB connection closed
+2026-05-02 22:04:26 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-02 22:08:23 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-02 22:08:23 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-02 22:08:23 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:08:23 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-02 22:08:23 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-02 22:08:23 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-02 22:08:23 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:08:23 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-02 22:08:23 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-02 22:08:23 | INFO     | stream_manager       | [cam_02] Stream thread started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-02 22:08:23 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-02 22:08:23 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-02 22:08:23 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-02 22:08:23 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-02 22:08:23 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:08:23 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-02 22:08:23 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-02 22:08:24 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:08:24 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:08:24 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:08:24 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:08:25 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:08:25 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:08:25 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:08:25 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:08:25 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:08:25 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:08:26 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:08:26 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:08:26 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:08:26 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:08:27 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:08:27 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:08:27 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:08:27 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:08:27 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:08:27 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:08:28 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:08:28 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:08:28 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:08:28 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:08:29 | INFO     | dashboard            | Exit pressed
+2026-05-02 22:08:29 | INFO     | orchestrator         | Stopping all workers...
+2026-05-02 22:08:29 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-02 22:08:29 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-02 22:08:29 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-02 22:08:29 | INFO     | database             | MongoDB connection closed
+2026-05-02 22:08:29 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-02 22:12:44 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-02 22:12:44 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-02 22:12:45 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:12:45 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-02 22:12:45 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-02 22:12:45 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-02 22:12:45 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:12:45 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-02 22:12:45 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-02 22:12:45 | INFO     | stream_manager       | [cam_02] Stream thread started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-02 22:12:45 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-02 22:12:45 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-02 22:12:45 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-02 22:12:45 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-02 22:12:45 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:12:45 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-02 22:12:45 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-02 22:12:45 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:12:45 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:12:46 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:12:46 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:12:46 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:12:46 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:12:46 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:12:46 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:12:47 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:12:47 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:12:47 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:12:47 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:12:48 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:12:48 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:12:48 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:12:48 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:12:48 | INFO     | dashboard            | Exit pressed
+2026-05-02 22:12:48 | INFO     | orchestrator         | Stopping all workers...
+2026-05-02 22:12:48 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-02 22:12:48 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-02 22:12:48 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-02 22:12:48 | INFO     | database             | MongoDB connection closed
+2026-05-02 22:12:48 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-02 22:13:39 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-02 22:13:39 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-02 22:13:39 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:13:39 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-02 22:13:39 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-02 22:13:39 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-02 22:13:39 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:13:39 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-02 22:13:39 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-02 22:13:39 | INFO     | stream_manager       | [cam_02] Stream thread started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-02 22:13:39 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-02 22:13:39 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-02 22:13:39 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-02 22:13:39 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-02 22:13:39 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:13:39 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-02 22:13:39 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-02 22:13:40 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:13:40 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:13:40 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:13:40 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:13:40 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:13:40 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:13:41 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:13:41 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:13:41 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:13:41 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:13:42 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:13:42 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:13:42 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:13:42 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:13:42 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:13:42 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:13:43 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:13:43 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:13:43 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:13:43 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:13:44 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:13:44 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:13:44 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:13:44 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:13:44 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:13:44 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:13:45 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:13:45 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:13:45 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:13:45 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:13:46 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:13:46 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:13:46 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:13:46 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:13:46 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:13:46 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:13:47 | INFO     | dashboard            | Exit pressed
+2026-05-02 22:13:47 | INFO     | orchestrator         | Stopping all workers...
+2026-05-02 22:13:47 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-02 22:13:47 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-02 22:13:47 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-02 22:13:47 | INFO     | database             | MongoDB connection closed
+2026-05-02 22:13:47 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-02 22:14:29 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-02 22:14:29 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-02 22:14:29 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:14:29 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-02 22:14:29 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-02 22:14:29 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-02 22:14:29 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:14:29 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-02 22:14:29 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-02 22:14:29 | INFO     | stream_manager       | [cam_02] Stream thread started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-02 22:14:29 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-02 22:14:29 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-02 22:14:29 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-02 22:14:29 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-02 22:14:29 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:14:29 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-02 22:14:29 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-02 22:14:30 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:14:30 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:14:30 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:14:30 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:14:31 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:14:31 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:14:31 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:14:31 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:14:31 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:14:31 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:14:32 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:14:32 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:14:32 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:14:32 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:14:33 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:14:33 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:14:33 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:14:33 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:14:33 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:14:33 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:14:34 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:14:34 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:14:34 | INFO     | dashboard            | Exit pressed
+2026-05-02 22:14:34 | INFO     | orchestrator         | Stopping all workers...
+2026-05-02 22:14:34 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-02 22:14:34 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-02 22:14:34 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-02 22:14:34 | INFO     | database             | MongoDB connection closed
+2026-05-02 22:14:34 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-02 22:19:08 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-02 22:19:08 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-02 22:19:08 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:19:08 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-02 22:19:08 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-02 22:19:08 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-02 22:19:08 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:19:08 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-02 22:19:08 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-02 22:19:08 | INFO     | stream_manager       | [cam_02] Stream thread started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-02 22:19:08 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-02 22:19:08 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-02 22:19:08 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-02 22:19:08 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:19:08 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-02 22:19:08 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-02 22:20:34 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-02 22:20:34 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-02 22:20:34 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:20:34 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-02 22:20:34 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-02 22:20:34 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-02 22:20:34 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:20:34 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-02 22:20:34 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-02 22:20:34 | INFO     | stream_manager       | [cam_02] Stream thread started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-02 22:20:34 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-02 22:20:34 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-02 22:20:34 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-02 22:20:34 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-02 22:20:34 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:20:34 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-02 22:20:34 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-02 22:20:48 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-02 22:20:48 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-02 22:20:48 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:20:48 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-02 22:20:48 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-02 22:20:48 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-02 22:20:48 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:20:48 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-02 22:20:48 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-02 22:20:48 | INFO     | stream_manager       | [cam_02] Stream thread started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-02 22:20:48 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-02 22:20:48 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-02 22:20:48 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-02 22:20:48 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-02 22:20:48 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:20:48 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-02 22:20:48 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-02 22:20:48 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:20:48 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:20:49 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:20:49 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:20:49 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:20:49 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:20:50 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:20:50 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:20:50 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:20:50 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:20:50 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:20:50 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:20:51 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:20:51 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:20:51 | INFO     | dashboard            | Exit pressed
+2026-05-02 22:20:51 | INFO     | orchestrator         | Stopping all workers...
+2026-05-02 22:20:51 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-02 22:20:51 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-02 22:20:51 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-02 22:20:51 | INFO     | database             | MongoDB connection closed
+2026-05-02 22:20:51 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-02 22:23:23 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-02 22:23:23 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-02 22:23:23 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:23:23 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-02 22:23:23 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-02 22:23:23 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-02 22:23:23 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:23:23 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-02 22:23:23 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-02 22:23:23 | INFO     | stream_manager       | [cam_02] Stream thread started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-02 22:23:23 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-02 22:23:23 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-02 22:23:23 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-02 22:23:23 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-02 22:23:23 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:23:23 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-02 22:23:23 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-02 22:23:23 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:23:23 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:23:24 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:23:24 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:23:24 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:23:24 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:23:25 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:23:25 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:23:25 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:23:25 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:23:25 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:23:25 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:23:26 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:23:26 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:23:26 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:23:26 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:23:27 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:23:27 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:23:27 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:23:27 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:23:27 | INFO     | dashboard            | Exit pressed
+2026-05-02 22:23:27 | INFO     | orchestrator         | Stopping all workers...
+2026-05-02 22:23:27 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-02 22:23:27 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-02 22:23:27 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-02 22:23:27 | INFO     | database             | MongoDB connection closed
+2026-05-02 22:23:27 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-02 22:23:57 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-02 22:23:57 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-02 22:23:57 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:23:57 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-02 22:23:57 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-02 22:23:57 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-02 22:23:57 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:23:57 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-02 22:23:57 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-02 22:23:57 | INFO     | stream_manager       | [cam_02] Stream thread started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-02 22:23:57 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-02 22:23:57 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-02 22:23:57 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-02 22:23:57 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-02 22:23:57 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:23:57 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-02 22:23:57 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-02 22:23:58 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:23:58 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:23:58 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:23:58 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:23:58 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:23:58 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:23:59 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:23:59 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:23:59 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:23:59 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:24:00 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:24:00 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:24:00 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:24:00 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:24:00 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:24:00 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:24:01 | INFO     | dashboard            | Exit pressed
+2026-05-02 22:24:01 | INFO     | orchestrator         | Stopping all workers...
+2026-05-02 22:24:01 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-02 22:24:01 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-02 22:24:01 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-02 22:24:01 | INFO     | database             | MongoDB connection closed
+2026-05-02 22:24:01 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-02 22:32:37 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-02 22:32:37 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-02 22:32:37 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:32:37 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-02 22:32:37 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-02 22:32:37 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-02 22:32:37 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:32:37 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-02 22:32:37 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-02 22:32:37 | INFO     | stream_manager       | [cam_02] Stream thread started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-02 22:32:37 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-02 22:32:37 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-02 22:32:37 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-02 22:32:37 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-02 22:32:37 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:32:38 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-02 22:32:38 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-02 22:32:38 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:32:38 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:32:38 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:32:38 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:32:39 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:32:39 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:32:39 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:32:39 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:32:40 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:32:40 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:32:40 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:32:40 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:32:40 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:32:40 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:32:41 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:32:41 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:32:41 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:32:41 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:32:42 | INFO     | dashboard            | Exit pressed
+2026-05-02 22:32:42 | INFO     | orchestrator         | Stopping all workers...
+2026-05-02 22:32:42 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-02 22:32:42 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-02 22:32:42 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-02 22:32:42 | INFO     | database             | MongoDB connection closed
+2026-05-02 22:32:42 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-02 22:35:42 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-02 22:35:42 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-02 22:35:42 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:35:42 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-02 22:35:42 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-02 22:35:42 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-02 22:35:42 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:35:42 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-02 22:35:42 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-02 22:35:42 | INFO     | stream_manager       | [cam_02] Stream thread started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-02 22:35:42 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-02 22:35:42 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-02 22:35:42 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-02 22:35:42 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-02 22:35:42 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:35:42 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-02 22:35:42 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-02 22:35:42 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:35:42 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:35:43 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:35:43 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:35:43 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:35:43 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:35:44 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:35:44 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:35:44 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:35:44 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:35:44 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:35:44 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:35:45 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:35:45 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:35:45 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:35:45 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:35:46 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:35:46 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:35:46 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:35:46 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:35:47 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:35:47 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:35:47 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:35:47 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:35:47 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:35:47 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:35:48 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:35:48 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:35:48 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:35:48 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:35:49 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:35:49 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:35:49 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:35:49 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:35:49 | INFO     | dashboard            | Exit pressed
+2026-05-02 22:35:49 | INFO     | orchestrator         | Stopping all workers...
+2026-05-02 22:35:49 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-02 22:35:49 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-02 22:35:49 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-02 22:35:49 | INFO     | database             | MongoDB connection closed
+2026-05-02 22:35:49 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-02 22:40:00 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-02 22:40:00 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-02 22:40:00 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:40:00 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-02 22:40:00 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-02 22:40:00 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-02 22:40:00 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:40:00 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-02 22:40:00 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-02 22:40:00 | INFO     | stream_manager       | [cam_02] Stream thread started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-02 22:40:00 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-02 22:40:00 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-02 22:40:00 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-02 22:40:00 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-02 22:40:00 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:40:00 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-02 22:40:00 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-02 22:40:01 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:40:01 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:40:01 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:40:01 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:40:01 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:40:02 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:40:02 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:40:02 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:40:02 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:40:02 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:40:03 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:40:03 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:40:03 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:40:03 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:40:03 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:40:03 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:40:04 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:40:04 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:40:04 | INFO     | dashboard            | Exit pressed
+2026-05-02 22:40:04 | INFO     | orchestrator         | Stopping all workers...
+2026-05-02 22:40:04 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-02 22:40:04 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-02 22:40:04 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-02 22:40:04 | INFO     | database             | MongoDB connection closed
+2026-05-02 22:40:04 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-02 22:42:30 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-02 22:42:30 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-02 22:42:30 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:42:30 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-02 22:42:30 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-02 22:42:30 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-02 22:42:30 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:42:30 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-02 22:42:30 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-02 22:42:30 | INFO     | stream_manager       | [cam_02] Stream thread started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-02 22:42:30 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-02 22:42:30 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-02 22:42:30 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-02 22:42:30 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-02 22:42:30 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:42:30 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-02 22:42:30 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-02 22:42:31 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:42:31 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:42:31 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:42:31 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:42:32 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:42:32 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:42:32 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:42:32 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:42:32 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:42:32 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:42:33 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:42:33 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:42:33 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:42:33 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:42:33 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:42:33 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:42:34 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:42:34 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:42:34 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:42:34 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:42:35 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:42:35 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:42:35 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:42:35 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:42:35 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:42:35 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:42:36 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:42:36 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:42:36 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:42:36 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:42:37 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:42:37 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:42:37 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:42:37 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:42:37 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:42:37 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:42:38 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:42:38 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:42:38 | WARNING  | stream_manager       | [cam_02] Frame read failed. Reconnecting...
+2026-05-02 22:42:38 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:42:38 | INFO     | dashboard            | Exit pressed
+2026-05-02 22:42:38 | INFO     | orchestrator         | Stopping all workers...
+2026-05-02 22:42:38 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-02 22:42:38 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-02 22:42:38 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-02 22:42:38 | INFO     | database             | MongoDB connection closed
+2026-05-02 22:42:38 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-02 22:47:00 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-02 22:47:00 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-02 22:47:00 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:47:00 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-02 22:47:00 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-02 22:47:00 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-02 22:47:00 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:47:00 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-02 22:47:00 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-02 22:47:00 | INFO     | stream_manager       | [cam_02] Stream thread started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-02 22:47:00 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-02 22:47:00 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-02 22:47:00 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-02 22:47:00 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-02 22:47:00 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:47:00 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-02 22:47:00 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-02 22:47:29 | INFO     | dashboard            | Exit pressed
+2026-05-02 22:47:29 | INFO     | orchestrator         | Stopping all workers...
+2026-05-02 22:47:29 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-02 22:47:29 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-02 22:47:29 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-02 22:47:29 | INFO     | database             | MongoDB connection closed
+2026-05-02 22:47:29 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-02 22:48:39 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-02 22:48:39 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-02 22:48:40 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:48:40 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-02 22:48:40 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-02 22:48:40 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-02 22:48:40 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:48:40 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-02 22:48:40 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-02 22:48:40 | INFO     | stream_manager       | [cam_02] Stream started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-02 22:48:40 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-02 22:48:40 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-02 22:48:40 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-02 22:48:40 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-02 22:48:40 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:48:40 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-02 22:48:40 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-02 22:49:10 | INFO     | dashboard            | Exit pressed
+2026-05-02 22:49:10 | INFO     | orchestrator         | Stopping all workers...
+2026-05-02 22:49:10 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-02 22:49:10 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-02 22:49:10 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-02 22:49:10 | INFO     | database             | MongoDB connection closed
+2026-05-02 22:49:10 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-02 22:51:58 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-02 22:51:58 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-02 22:51:58 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:51:58 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-02 22:51:58 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-02 22:51:58 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-02 22:51:58 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:51:58 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-02 22:51:58 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-02 22:51:58 | INFO     | stream_manager       | [cam_02] Stream started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-02 22:51:58 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-02 22:51:58 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-02 22:51:58 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-02 22:51:58 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-02 22:51:58 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:51:58 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-02 22:51:58 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-02 22:52:31 | INFO     | dashboard            | Exit pressed
+2026-05-02 22:52:31 | INFO     | orchestrator         | Stopping all workers...
+2026-05-02 22:52:31 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-02 22:52:31 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-02 22:52:31 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-02 22:52:31 | INFO     | database             | MongoDB connection closed
+2026-05-02 22:52:31 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-02 22:54:23 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-02 22:54:23 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-02 22:54:23 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:54:23 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-02 22:54:23 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-02 22:54:23 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-02 22:54:23 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-02 22:54:23 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-02 22:54:23 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-02 22:54:23 | INFO     | stream_manager       | [cam_02] Stream started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-02 22:54:23 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-02 22:54:23 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-02 22:54:23 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-02 22:54:23 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-02 22:54:23 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-02 22:54:23 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-02 22:54:23 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-02 22:54:54 | INFO     | dashboard            | Exit pressed
+2026-05-02 22:54:54 | INFO     | orchestrator         | Stopping all workers...
+2026-05-02 22:54:54 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-02 22:54:54 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-02 22:54:54 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-02 22:54:54 | INFO     | database             | MongoDB connection closed
+2026-05-02 22:54:54 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-03 20:11:55 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-03 20:11:55 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-03 20:11:55 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-03 20:11:55 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-03 20:11:55 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-03 20:11:55 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-03 20:11:55 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-03 20:11:55 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-03 20:11:55 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-03 20:11:55 | INFO     | stream_manager       | [cam_02] Stream started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-03 20:11:55 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-03 20:11:55 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-03 20:11:55 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-03 20:11:55 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-03 20:11:55 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-03 20:11:55 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-03 20:11:55 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-03 20:12:24 | INFO     | dashboard            | Exit pressed
+2026-05-03 20:12:24 | INFO     | orchestrator         | Stopping all workers...
+2026-05-03 20:12:24 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-03 20:12:24 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-03 20:12:24 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-03 20:12:24 | INFO     | database             | MongoDB connection closed
+2026-05-03 20:12:24 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-03 20:41:39 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-03 20:41:39 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-03 20:41:39 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-03 20:41:39 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-03 20:41:39 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-03 20:41:39 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-03 20:41:39 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-03 20:41:39 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-03 20:41:39 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-03 20:41:39 | INFO     | stream_manager       | [cam_02] Stream started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-03 20:41:39 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-03 20:41:39 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-03 20:41:39 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-03 20:41:39 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-03 20:41:39 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-03 20:41:39 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-03 20:41:39 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-03 20:42:27 | INFO     | dashboard            | Exit pressed
+2026-05-03 20:42:27 | INFO     | orchestrator         | Stopping all workers...
+2026-05-03 20:42:27 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-03 20:42:27 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-03 20:42:27 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-03 20:42:27 | INFO     | database             | MongoDB connection closed
+2026-05-03 20:42:27 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-03 20:43:28 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-03 20:43:28 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-03 20:43:28 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-03 20:43:28 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-03 20:43:28 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-03 20:43:28 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-03 20:43:28 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-03 20:43:28 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-03 20:43:28 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-03 20:43:28 | INFO     | stream_manager       | [cam_02] Stream started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-03 20:43:28 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-03 20:43:28 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-03 20:43:28 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-03 20:43:28 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-03 20:43:28 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-03 20:43:28 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-03 20:43:28 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-03 20:44:00 | INFO     | dashboard            | Exit pressed
+2026-05-03 20:44:00 | INFO     | orchestrator         | Stopping all workers...
+2026-05-03 20:44:00 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-03 20:44:00 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-03 20:44:00 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-03 20:44:00 | INFO     | database             | MongoDB connection closed
+2026-05-03 20:44:00 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-03 21:19:14 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-03 21:19:14 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-03 21:19:14 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-03 21:19:14 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-03 21:19:14 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-03 21:19:14 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-03 21:19:14 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-03 21:19:14 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-03 21:19:14 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-03 21:19:14 | INFO     | stream_manager       | [cam_02] Stream started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-03 21:19:14 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-03 21:19:14 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-03 21:19:14 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-03 21:19:14 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-03 21:19:14 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-03 21:19:14 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-03 21:19:14 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-03 21:19:48 | INFO     | dashboard            | Exit pressed
+2026-05-03 21:19:48 | INFO     | orchestrator         | Stopping all workers...
+2026-05-03 21:19:48 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-03 21:19:48 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-03 21:19:48 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-03 21:19:48 | INFO     | database             | MongoDB connection closed
+2026-05-03 21:19:48 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-03 21:22:52 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-03 21:22:52 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-03 21:22:52 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-03 21:22:52 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-03 21:22:52 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-03 21:22:52 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-03 21:22:52 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-03 21:22:52 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-03 21:22:52 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-03 21:22:52 | INFO     | stream_manager       | [cam_02] Stream started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-03 21:22:52 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-03 21:22:52 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-03 21:22:52 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-03 21:22:52 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-03 21:22:52 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-03 21:22:52 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-03 21:22:52 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-03 21:23:22 | INFO     | dashboard            | Exit pressed
+2026-05-03 21:23:22 | INFO     | orchestrator         | Stopping all workers...
+2026-05-03 21:23:22 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-03 21:23:24 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-03 21:23:24 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-03 21:23:24 | INFO     | database             | MongoDB connection closed
+2026-05-03 21:23:24 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-03 21:26:28 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-03 21:26:28 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-03 21:26:28 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-03 21:26:28 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-03 21:26:28 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-03 21:26:28 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-03 21:26:28 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-03 21:26:28 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-03 21:26:28 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-03 21:26:28 | INFO     | stream_manager       | [cam_02] Stream started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-03 21:26:28 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-03 21:26:28 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-03 21:26:28 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-03 21:26:28 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-03 21:26:28 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-03 21:26:28 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-03 21:26:28 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-03 21:26:56 | INFO     | dashboard            | Exit pressed
+2026-05-03 21:26:56 | INFO     | orchestrator         | Stopping all workers...
+2026-05-03 21:26:56 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-03 21:26:59 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-03 21:26:59 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-03 21:26:59 | INFO     | database             | MongoDB connection closed
+2026-05-03 21:26:59 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-04 11:32:37 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-04 11:32:37 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-04 11:32:37 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-04 11:32:37 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-04 11:32:37 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-04 11:32:37 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-04 11:32:37 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-04 11:32:37 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-04 11:32:37 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-04 11:32:37 | INFO     | stream_manager       | [cam_02] Stream started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-04 11:32:37 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-04 11:32:37 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-04 11:32:37 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-04 11:32:37 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-04 11:32:37 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-04 11:32:38 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-04 11:32:38 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-04 11:33:07 | INFO     | dashboard            | Exit pressed
+2026-05-04 11:33:07 | INFO     | orchestrator         | Stopping all workers...
+2026-05-04 11:33:07 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-04 11:33:09 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-04 11:33:09 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-04 11:33:09 | INFO     | database             | MongoDB connection closed
+2026-05-04 11:33:09 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-04 20:25:56 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-04 20:25:56 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-04 20:25:56 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-04 20:25:56 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-04 20:25:56 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-04 20:25:56 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-04 20:25:56 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-04 20:25:56 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-04 20:25:56 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-04 20:25:56 | INFO     | stream_manager       | [cam_02] Stream started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-04 20:25:56 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-04 20:25:56 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-04 20:25:56 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-04 20:25:56 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-04 20:25:56 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-04 20:25:57 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-04 20:25:57 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-04 20:26:27 | INFO     | dashboard            | Exit pressed
+2026-05-04 20:26:27 | INFO     | orchestrator         | Stopping all workers...
+2026-05-04 20:26:27 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-04 20:26:27 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-04 20:26:27 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-04 20:26:27 | INFO     | database             | MongoDB connection closed
+2026-05-04 20:26:27 | INFO     | main                 | === System Shutdown Complete ===
+2026-05-04 21:07:31 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-05-04 21:07:31 | INFO     | main                 | Config loaded | Cameras: 1
+2026-05-04 21:07:31 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-04 21:07:31 | INFO     | hardware             | OpenCV optimizations applied
+2026-05-04 21:07:31 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-05-04 21:07:31 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-05-04 21:07:31 | INFO     | hardware             | GPU detected: NVIDIA GeForce RTX 4060 Ti
+2026-05-04 21:07:31 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-05-04 21:07:31 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-05-04 21:07:31 | INFO     | stream_manager       | [cam_02] Stream started | source=/home/quantic/Biswa/Research/Project/ambulance_alert_system/test.mp4
+2026-05-04 21:07:31 | INFO     | camera_worker        | [cam_02] Worker started
+2026-05-04 21:07:31 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-05-04 21:07:31 | INFO     | orchestrator         | Orchestrator started all workers
+2026-05-04 21:07:31 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-05-04 21:07:31 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-05-04 21:07:31 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-05-04 21:07:31 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-05-04 21:08:06 | INFO     | dashboard            | Exit pressed
+2026-05-04 21:08:06 | INFO     | orchestrator         | Stopping all workers...
+2026-05-04 21:08:06 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-05-04 21:08:06 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-05-04 21:08:06 | INFO     | orchestrator         | Orchestrator stopped
+2026-05-04 21:08:06 | INFO     | database             | MongoDB connection closed
+2026-05-04 21:08:06 | INFO     | main                 | === System Shutdown Complete ===
+2026-09-11 22:03:40 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-09-11 22:03:40 | INFO     | main                 | Config loaded | Cameras: 1
+2026-09-11 22:03:41 | INFO     | hardware             | GPU detected: Orin
+2026-09-11 22:03:41 | INFO     | hardware             | OpenCV optimizations applied
+2026-09-11 22:03:46 | ERROR    | database             | MongoDB connection failed: localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 5000.0ms, connectTimeoutMS: 5000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 6aa42d651b6cb589ac15e4c4, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 5000.0ms, connectTimeoutMS: 5000.0ms)')>]>
+2026-09-11 22:10:46 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-09-11 22:10:46 | INFO     | main                 | Config loaded | Cameras: 1
+2026-09-11 22:10:46 | INFO     | hardware             | GPU detected: Orin
+2026-09-11 22:10:46 | INFO     | hardware             | OpenCV optimizations applied
+2026-09-11 22:10:46 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-09-11 22:10:46 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-09-11 22:10:46 | INFO     | hardware             | GPU detected: Orin
+2026-09-11 22:10:46 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-09-11 22:10:46 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-09-11 22:10:46 | INFO     | stream_manager       | [cam_02] Stream started | source=/home/nvidia/Research/ambulance_alert_system/test.mp4
+2026-09-11 22:10:46 | INFO     | camera_worker        | [cam_02] Worker started
+2026-09-11 22:10:46 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-09-11 22:10:46 | INFO     | orchestrator         | Orchestrator started all workers
+2026-09-11 22:10:46 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-09-11 22:10:46 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-09-11 22:10:47 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-09-11 22:10:47 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-09-11 22:10:56 | INFO     | dashboard            | Exit pressed
+2026-09-11 22:10:56 | INFO     | orchestrator         | Stopping all workers...
+2026-09-11 22:10:56 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-09-11 22:10:56 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-09-11 22:10:56 | INFO     | orchestrator         | Orchestrator stopped
+2026-09-11 22:10:56 | INFO     | database             | MongoDB connection closed
+2026-09-11 22:10:56 | INFO     | main                 | === System Shutdown Complete ===
+2026-09-11 22:11:39 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-09-11 22:11:39 | INFO     | main                 | Config loaded | Cameras: 1
+2026-09-11 22:11:39 | INFO     | hardware             | GPU detected: Orin
+2026-09-11 22:11:39 | INFO     | hardware             | OpenCV optimizations applied
+2026-09-11 22:11:39 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-09-11 22:11:39 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-09-11 22:11:39 | INFO     | hardware             | GPU detected: Orin
+2026-09-11 22:11:39 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-09-11 22:11:39 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-09-11 22:11:39 | INFO     | stream_manager       | [cam_02] Stream started | source=/home/nvidia/Research/ambulance_alert_system/test.mp4
+2026-09-11 22:11:39 | INFO     | camera_worker        | [cam_02] Worker started
+2026-09-11 22:11:39 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-09-11 22:11:39 | INFO     | orchestrator         | Orchestrator started all workers
+2026-09-11 22:11:39 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-09-11 22:11:39 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-09-11 22:11:39 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-09-11 22:11:39 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-09-11 22:13:05 | INFO     | dashboard            | Exit pressed
+2026-09-11 22:13:05 | INFO     | orchestrator         | Stopping all workers...
+2026-09-11 22:13:05 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-09-11 22:13:05 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-09-11 22:13:05 | INFO     | orchestrator         | Orchestrator stopped
+2026-09-11 22:13:05 | INFO     | database             | MongoDB connection closed
+2026-09-11 22:13:05 | INFO     | main                 | === System Shutdown Complete ===
+2026-09-11 22:17:47 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-09-11 22:17:47 | INFO     | main                 | Config loaded | Cameras: 1
+2026-09-11 22:17:47 | INFO     | hardware             | GPU detected: Orin
+2026-09-11 22:17:47 | INFO     | hardware             | OpenCV optimizations applied
+2026-09-11 22:17:47 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-09-11 22:17:47 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-09-11 22:17:47 | INFO     | hardware             | GPU detected: Orin
+2026-09-11 22:17:47 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-09-11 22:17:47 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-09-11 22:17:47 | INFO     | stream_manager       | [cam_02] Stream started | source=/home/nvidia/Research/ambulance_alert_system/test.mp4
+2026-09-11 22:17:47 | INFO     | camera_worker        | [cam_02] Worker started
+2026-09-11 22:17:47 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-09-11 22:17:47 | INFO     | orchestrator         | Orchestrator started all workers
+2026-09-11 22:17:47 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-09-11 22:17:47 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-09-11 22:17:47 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-09-11 22:17:47 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-09-11 22:17:59 | INFO     | dashboard            | Exit pressed
+2026-09-11 22:17:59 | INFO     | orchestrator         | Stopping all workers...
+2026-09-11 22:17:59 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-09-11 22:17:59 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-09-11 22:17:59 | INFO     | orchestrator         | Orchestrator stopped
+2026-09-11 22:17:59 | INFO     | database             | MongoDB connection closed
+2026-09-11 22:17:59 | INFO     | main                 | === System Shutdown Complete ===
+2026-09-11 22:18:47 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-09-11 22:18:47 | INFO     | main                 | Config loaded | Cameras: 1
+2026-09-11 22:18:47 | INFO     | hardware             | GPU detected: Orin
+2026-09-11 22:18:47 | INFO     | hardware             | OpenCV optimizations applied
+2026-09-11 22:18:47 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-09-11 22:18:47 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-09-11 22:18:47 | INFO     | hardware             | GPU detected: Orin
+2026-09-11 22:18:47 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-09-11 22:18:47 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-09-11 22:18:47 | INFO     | stream_manager       | [cam_02] Stream started | source=/home/nvidia/Research/ambulance_alert_system/test.mp4
+2026-09-11 22:18:47 | INFO     | camera_worker        | [cam_02] Worker started
+2026-09-11 22:18:47 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-09-11 22:18:47 | INFO     | orchestrator         | Orchestrator started all workers
+2026-09-11 22:18:47 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-09-11 22:18:47 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-09-11 22:18:48 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-09-11 22:18:48 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-09-11 22:19:38 | INFO     | dashboard            | Exit pressed
+2026-09-11 22:19:38 | INFO     | orchestrator         | Stopping all workers...
+2026-09-11 22:19:38 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-09-11 22:19:42 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-09-11 22:19:42 | INFO     | orchestrator         | Orchestrator stopped
+2026-09-11 22:19:42 | INFO     | database             | MongoDB connection closed
+2026-09-11 22:19:42 | INFO     | main                 | === System Shutdown Complete ===
+2026-10-06 20:40:28 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-10-06 20:40:28 | INFO     | main                 | Config loaded | Cameras: 1
+2026-10-06 20:40:28 | INFO     | hardware             | GPU detected: Orin
+2026-10-06 20:40:28 | INFO     | hardware             | OpenCV optimizations applied
+2026-10-06 20:40:28 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-10-06 20:40:28 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-10-06 20:40:28 | INFO     | hardware             | GPU detected: Orin
+2026-10-06 20:40:28 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-10-06 20:40:28 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-10-06 20:40:28 | INFO     | stream_manager       | [cam_02] Stream started | source=car_fall.mp4
+2026-10-06 20:40:28 | INFO     | camera_worker        | [cam_02] Worker started
+2026-10-06 20:40:28 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-10-06 20:40:28 | INFO     | orchestrator         | Orchestrator started all workers
+2026-10-06 20:40:28 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-10-06 20:40:28 | INFO     | stream_manager       | [cam_02] Connected | FPS=60.0
+2026-10-06 20:40:29 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-10-06 20:40:29 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-10-06 20:41:52 | INFO     | dashboard            | Exit pressed
+2026-10-06 20:41:52 | INFO     | orchestrator         | Stopping all workers...
+2026-10-06 20:41:52 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-10-06 20:41:52 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-10-06 20:41:52 | INFO     | orchestrator         | Orchestrator stopped
+2026-10-06 20:41:52 | INFO     | database             | MongoDB connection closed
+2026-10-06 20:41:52 | INFO     | main                 | === System Shutdown Complete ===
+2026-10-06 20:42:42 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-10-06 20:42:42 | INFO     | main                 | Config loaded | Cameras: 1
+2026-10-06 20:42:42 | INFO     | hardware             | GPU detected: Orin
+2026-10-06 20:42:42 | INFO     | hardware             | OpenCV optimizations applied
+2026-10-06 20:42:42 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-10-06 20:42:42 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-10-06 20:42:42 | INFO     | hardware             | GPU detected: Orin
+2026-10-06 20:42:42 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-10-06 20:42:42 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-10-06 20:42:42 | INFO     | stream_manager       | [cam_02] Stream started | source=car_fall.mp4
+2026-10-06 20:42:42 | INFO     | camera_worker        | [cam_02] Worker started
+2026-10-06 20:42:42 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-10-06 20:42:42 | INFO     | orchestrator         | Orchestrator started all workers
+2026-10-06 20:42:42 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-10-06 20:42:42 | INFO     | stream_manager       | [cam_02] Connected | FPS=60.0
+2026-10-06 20:42:42 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-10-06 20:42:42 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-10-06 20:43:44 | INFO     | dashboard            | Exit pressed
+2026-10-06 20:43:45 | INFO     | orchestrator         | Stopping all workers...
+2026-10-06 20:43:45 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-10-06 20:43:45 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-10-06 20:43:45 | INFO     | orchestrator         | Orchestrator stopped
+2026-10-06 20:43:45 | INFO     | database             | MongoDB connection closed
+2026-10-06 20:43:45 | INFO     | main                 | === System Shutdown Complete ===
+2026-10-28 21:09:28 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-10-28 21:09:28 | INFO     | main                 | Config loaded | Cameras: 1
+2026-10-28 21:09:28 | INFO     | hardware             | GPU detected: Orin
+2026-10-28 21:09:28 | INFO     | hardware             | OpenCV optimizations applied
+2026-10-28 21:09:28 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-10-28 21:09:28 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-10-28 21:09:28 | INFO     | hardware             | GPU detected: Orin
+2026-10-28 21:09:28 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-10-28 21:09:29 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-10-28 21:09:29 | INFO     | stream_manager       | [cam_02] Stream started | source=car_fall.mp4
+2026-10-28 21:09:29 | INFO     | camera_worker        | [cam_02] Worker started
+2026-10-28 21:09:29 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-10-28 21:09:29 | INFO     | orchestrator         | Orchestrator started all workers
+2026-10-28 21:09:29 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-10-28 21:09:29 | INFO     | stream_manager       | [cam_02] Connected | FPS=60.0
+2026-10-28 21:09:30 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-10-28 21:09:30 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-10-28 21:10:26 | INFO     | dashboard            | Exit pressed
+2026-10-28 21:10:26 | INFO     | orchestrator         | Stopping all workers...
+2026-10-28 21:10:26 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-10-28 21:10:26 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-10-28 21:10:26 | INFO     | orchestrator         | Orchestrator stopped
+2026-10-28 21:10:26 | INFO     | database             | MongoDB connection closed
+2026-10-28 21:10:26 | INFO     | main                 | === System Shutdown Complete ===
+2026-10-28 21:11:13 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-10-28 21:11:13 | INFO     | main                 | Config loaded | Cameras: 1
+2026-10-28 21:11:13 | INFO     | hardware             | GPU detected: Orin
+2026-10-28 21:11:13 | INFO     | hardware             | OpenCV optimizations applied
+2026-10-28 21:11:13 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-10-28 21:11:13 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-10-28 21:11:13 | INFO     | hardware             | GPU detected: Orin
+2026-10-28 21:11:13 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-10-28 21:11:13 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-10-28 21:11:13 | INFO     | stream_manager       | [cam_02] Stream started | source=car_fall.mp4
+2026-10-28 21:11:13 | INFO     | camera_worker        | [cam_02] Worker started
+2026-10-28 21:11:13 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-10-28 21:11:13 | INFO     | orchestrator         | Orchestrator started all workers
+2026-10-28 21:11:13 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-10-28 21:11:13 | INFO     | stream_manager       | [cam_02] Connected | FPS=60.0
+2026-10-28 21:11:14 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-10-28 21:11:14 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-10-28 21:11:42 | INFO     | dashboard            | Exit pressed
+2026-10-28 21:11:42 | INFO     | orchestrator         | Stopping all workers...
+2026-10-28 21:11:42 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-10-28 21:11:42 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-10-28 21:11:42 | INFO     | orchestrator         | Orchestrator stopped
+2026-10-28 21:11:42 | INFO     | database             | MongoDB connection closed
+2026-10-28 21:11:42 | INFO     | main                 | === System Shutdown Complete ===
+2026-10-28 22:11:38 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-10-28 22:11:38 | INFO     | main                 | Config loaded | Cameras: 1
+2026-10-28 22:11:38 | INFO     | hardware             | GPU detected: Orin
+2026-10-28 22:11:38 | INFO     | hardware             | OpenCV optimizations applied
+2026-10-28 22:11:38 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-10-28 22:11:38 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-10-28 22:11:38 | INFO     | hardware             | GPU detected: Orin
+2026-10-28 22:11:38 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-10-28 22:11:39 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-10-28 22:11:39 | INFO     | stream_manager       | [cam_02] Stream started | source=car_fall.mp4
+2026-10-28 22:11:39 | INFO     | camera_worker        | [cam_02] Worker started
+2026-10-28 22:11:39 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-10-28 22:11:39 | INFO     | orchestrator         | Orchestrator started all workers
+2026-10-28 22:11:39 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-10-28 22:11:39 | INFO     | stream_manager       | [cam_02] Connected | FPS=60.0
+2026-10-28 22:11:39 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-10-28 22:11:40 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-10-28 22:11:55 | INFO     | dashboard            | Exit pressed
+2026-10-28 22:11:55 | INFO     | orchestrator         | Stopping all workers...
+2026-10-28 22:11:55 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-10-28 22:11:55 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-10-28 22:11:55 | INFO     | orchestrator         | Orchestrator stopped
+2026-10-28 22:11:55 | INFO     | database             | MongoDB connection closed
+2026-10-28 22:11:55 | INFO     | main                 | === System Shutdown Complete ===
+2026-10-28 22:12:18 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-10-28 22:12:18 | INFO     | main                 | Config loaded | Cameras: 1
+2026-10-28 22:12:19 | INFO     | hardware             | GPU detected: Orin
+2026-10-28 22:12:19 | INFO     | hardware             | OpenCV optimizations applied
+2026-10-28 22:12:19 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-10-28 22:12:19 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-10-28 22:12:19 | INFO     | hardware             | GPU detected: Orin
+2026-10-28 22:12:19 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-10-28 22:12:19 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-10-28 22:12:19 | INFO     | stream_manager       | [cam_02] Stream started | source=test.mp4
+2026-10-28 22:12:19 | INFO     | camera_worker        | [cam_02] Worker started
+2026-10-28 22:12:19 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-10-28 22:12:19 | INFO     | orchestrator         | Orchestrator started all workers
+2026-10-28 22:12:19 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-10-28 22:12:19 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-10-28 22:12:19 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-10-28 22:12:19 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-10-28 22:13:24 | INFO     | dashboard            | Exit pressed
+2026-10-28 22:13:24 | INFO     | orchestrator         | Stopping all workers...
+2026-10-28 22:13:24 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-10-28 22:13:24 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-10-28 22:13:24 | INFO     | orchestrator         | Orchestrator stopped
+2026-10-28 22:13:24 | INFO     | database             | MongoDB connection closed
+2026-10-28 22:13:24 | INFO     | main                 | === System Shutdown Complete ===
+2026-10-28 22:17:12 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-10-28 22:17:12 | INFO     | main                 | Config loaded | Cameras: 1
+2026-10-28 22:17:12 | INFO     | hardware             | GPU detected: Orin
+2026-10-28 22:17:12 | INFO     | hardware             | OpenCV optimizations applied
+2026-10-28 22:17:12 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-10-28 22:17:12 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-10-28 22:17:12 | INFO     | hardware             | GPU detected: Orin
+2026-10-28 22:17:12 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-10-28 22:17:13 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-10-28 22:17:13 | INFO     | stream_manager       | [cam_02] Stream started | source=test.mp4
+2026-10-28 22:17:13 | INFO     | camera_worker        | [cam_02] Worker started
+2026-10-28 22:17:13 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-10-28 22:17:13 | INFO     | orchestrator         | Orchestrator started all workers
+2026-10-28 22:17:13 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-10-28 22:17:13 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-10-28 22:17:13 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-10-28 22:17:13 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-10-28 22:17:24 | INFO     | dashboard            | Exit pressed
+2026-10-28 22:17:24 | INFO     | orchestrator         | Stopping all workers...
+2026-10-28 22:17:24 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-10-28 22:17:24 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-10-28 22:17:24 | INFO     | orchestrator         | Orchestrator stopped
+2026-10-28 22:17:24 | INFO     | database             | MongoDB connection closed
+2026-10-28 22:17:24 | INFO     | main                 | === System Shutdown Complete ===
+2026-10-28 22:18:45 | INFO     | main                 | === Alert Monitoring System Starting ===
+2026-10-28 22:18:45 | INFO     | main                 | Config loaded | Cameras: 1
+2026-10-28 22:18:45 | INFO     | hardware             | GPU detected: Orin
+2026-10-28 22:18:45 | INFO     | hardware             | OpenCV optimizations applied
+2026-10-28 22:18:45 | INFO     | database             | MongoDB connected: mongodb://localhost:27017/ | DB: my_project
+2026-10-28 22:18:45 | INFO     | orchestrator         | Starting orchestrator for 1 cameras
+2026-10-28 22:18:45 | INFO     | hardware             | GPU detected: Orin
+2026-10-28 22:18:45 | INFO     | detector             | Loading YOLO model on cuda | half=True
+2026-10-28 22:18:45 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'train']
+2026-10-28 22:18:45 | INFO     | stream_manager       | [cam_02] Stream started | source=test.mp4
+2026-10-28 22:18:45 | INFO     | camera_worker        | [cam_02] Worker started
+2026-10-28 22:18:45 | INFO     | orchestrator         | Worker started for camera: cam_02
+2026-10-28 22:18:45 | INFO     | orchestrator         | Orchestrator started all workers
+2026-10-28 22:18:45 | INFO     | main                 | REST API running on http://0.0.0.0:5050
+2026-10-28 22:18:45 | INFO     | stream_manager       | [cam_02] Connected | FPS=30.0
+2026-10-28 22:18:46 | INFO     | dashboard            | Dashboard initialized in FULLSCREEN
+2026-10-28 22:18:46 | INFO     | dashboard            | Dashboard running (FULLSCREEN). Press Q or ESC to quit.
+2026-10-28 22:19:23 | INFO     | dashboard            | Exit pressed
+2026-10-28 22:19:23 | INFO     | orchestrator         | Stopping all workers...
+2026-10-28 22:19:23 | INFO     | stream_manager       | [cam_02] Stream stopped
+2026-10-28 22:19:23 | INFO     | camera_worker        | [cam_02] Worker stopped
+2026-10-28 22:19:23 | INFO     | orchestrator         | Orchestrator stopped
+2026-10-28 22:19:23 | INFO     | database             | MongoDB connection closed
+2026-10-28 22:19:23 | INFO     | main                 | === System Shutdown Complete ===
+2026-11-01 00:48:07 | INFO     | detector             | Loading YOLO model on cpu | half=False
+2026-11-01 00:48:07 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'car_fall']
+2026-11-01 00:48:33 | INFO     | detector             | Loading YOLO model on cpu | half=False
+2026-11-01 00:48:33 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'car_fall']
+2026-11-01 00:48:47 | INFO     | detector             | Loading YOLO model on cpu | half=False
+2026-11-01 00:48:47 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'car_fall']
+2026-11-01 00:55:44 | INFO     | main                 | === Web Detection Alert System Starting ===
+2026-11-01 00:55:44 | INFO     | hardware             | No GPU found, using CPU
+2026-11-01 00:55:44 | INFO     | hardware             | OpenCV threads set to 2
+2026-11-01 00:55:44 | INFO     | hardware             | OpenCV optimizations applied
+2026-11-01 00:55:44 | INFO     | config_store         | Imported 1 camera(s) from configs/cameras.yaml
+2026-11-01 00:55:44 | INFO     | config_store         | Imported model settings from configs/model.yaml
+2026-11-01 00:55:44 | INFO     | alert_store          | Loaded 0 alert(s) from /tmp/claude-1000/-home-mani-Mani-Project-Research-support-Detection-application/c1540e39-c1bb-40f6-b11f-12a37f1064a3/scratchpad/testdata/alerts.jsonl
+2026-11-01 00:55:44 | INFO     | main                 | Dashboard: http://localhost:8765
+2026-11-01 00:56:06 | INFO     | config_store         | Camera deleted: cam_02
+2026-11-01 00:56:06 | INFO     | config_store         | Camera added: test_road
+2026-11-01 00:56:06 | INFO     | config_store         | Model settings saved
+2026-11-01 00:56:06 | INFO     | hardware             | No GPU found, using CPU
+2026-11-01 00:56:06 | INFO     | engine               | Detection started on 1 camera(s)
+2026-11-01 00:56:06 | INFO     | detector             | Loading YOLO model on cpu | half=False
+2026-11-01 00:56:06 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'car_fall']
+2026-11-01 00:56:06 | INFO     | stream_manager       | [test_road] Stream started | source=/home/mani/Downloads/sample_1920_1080_24fps.mp4
+2026-11-01 00:56:06 | INFO     | stream_manager       | [test_road] Connected | FPS=24.0
+2026-11-01 00:56:17 | INFO     | alert_store          | ALERT Emergency Vehicle Detected | Test Road | conf=0.51 | track=1
+2026-11-01 00:57:06 | INFO     | config_store         | Camera updated: test_road
+2026-11-01 00:57:06 | INFO     | stream_manager       | [test_road] Stream stopped
+2026-11-01 00:57:06 | INFO     | stream_manager       | [test_road] Stream stopped
+2026-11-01 00:57:06 | INFO     | engine               | Detection stopped
+2026-11-01 00:57:06 | INFO     | hardware             | No GPU found, using CPU
+2026-11-01 00:57:06 | INFO     | detector             | Loading YOLO model on cpu | half=False
+2026-11-01 00:57:06 | INFO     | engine               | Detection started on 1 camera(s)
+2026-11-01 00:57:06 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'car_fall']
+2026-11-01 00:57:06 | INFO     | stream_manager       | [test_road] Stream started | source=/home/mani/Downloads/sample_1920_1080_24fps.mp4
+2026-11-01 00:57:06 | INFO     | stream_manager       | [test_road] Connected | FPS=24.0
+2026-11-01 00:57:15 | INFO     | stream_manager       | [test_road] Stream stopped
+2026-11-01 00:57:15 | INFO     | stream_manager       | [test_road] Stream stopped
+2026-11-01 00:57:15 | INFO     | engine               | Detection stopped
+2026-11-01 00:57:31 | INFO     | engine               | Detection started on 1 camera(s)
+2026-11-01 00:57:31 | INFO     | hardware             | No GPU found, using CPU
+2026-11-01 00:57:31 | INFO     | detector             | Loading YOLO model on cpu | half=False
+2026-11-01 00:57:31 | INFO     | detector             | Model loaded. Classes: ['car', 'truck', 'bike', 'bus', 'others', 'ambulance', 'car_fall']
+2026-11-01 00:57:31 | INFO     | stream_manager       | [test_road] Stream started | source=/home/mani/Downloads/sample_1920_1080_24fps.mp4
+2026-11-01 00:57:31 | INFO     | stream_manager       | [test_road] Connected | FPS=24.0
+2026-11-01 00:57:41 | INFO     | alert_store          | ALERT Emergency Vehicle Detected | Test Road | conf=0.53 | track=1

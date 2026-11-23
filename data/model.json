@@ -1,0 +1,68 @@
+{
+  "path": "models/car_fall.pt",
+  "device": "auto",
+  "imgsz": 640,
+  "conf_threshold": 0.4,
+  "iou_threshold": 0.45,
+  "half": false,
+  "tracking": {
+    "enabled": true,
+    "method": "bytetrack"
+  },
+  "alert": {
+    "min_confidence": 0.75,
+    "min_frames": 3,
+    "cooldown_seconds": 10.0
+  },
+  "classes": [
+    {
+      "name": "car",
+      "color": "#90ee90",
+      "show": true,
+      "alert": false,
+      "alert_label": "car"
+    },
+    {
+      "name": "truck",
+      "color": "#e6d8ad",
+      "show": true,
+      "alert": false,
+      "alert_label": "truck"
+    },
+    {
+      "name": "bike",
+      "color": "#99ffff",
+      "show": true,
+      "alert": false,
+      "alert_label": "bike"
+    },
+    {
+      "name": "bus",
+      "color": "#c1b6ff",
+      "show": true,
+      "alert": false,
+      "alert_label": "bus"
+    },
+    {
+      "name": "others",
+      "color": "#dda0dd",
+      "show": true,
+      "alert": false,
+      "alert_label": "others"
+    },
+    {
+      "name": "ambulance",
+      "color": "#ff5000",
+      "show": true,
+      "alert": false,
+      "alert_label": "Emergency Vehicle Detected"
+    },
+    {
+      "name": "car_fall",
+      "color": "#ffa500",
+      "show": true,
+      "alert": true,
+      "alert_label": "car_fall"
+    }
+  ]
+}

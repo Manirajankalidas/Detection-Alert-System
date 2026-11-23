@@ -1,0 +1,46 @@
+ambulance_alert_system/
+│
+├── api/
+│   ├── __init__.py
+│   ├── config.py                  # MongoDB URI, client name, all env configs
+│   ├── database.py                # MongoDB connection manager
+│   ├── models.py                  # Pydantic/dataclass models for reports & clients
+│   └── routes.py                  # Flask REST API endpoints
+│
+├── core/
+│   ├── __init__.py
+│   ├── detector.py                # YOLO detection engine
+│   ├── tracker.py                 # Tracker factory (ByteTrack / DeepSORT / None)
+│   ├── alert_manager.py           # Alert logic + MongoDB save + base64 encode
+│   └── stream_manager.py          # RTSP / Video file stream handler
+│
+├── pipeline/
+│   ├── __init__.py
+│   ├── camera_worker.py           # Per-camera threaded/async worker
+│   └── orchestrator.py            # Manages N camera workers, lifecycle
+│
+├── gui/
+│   ├── __init__.py
+│   ├── dashboard.py               # PyQt5 / OpenCV dynamic multi-cam GUI
+│   └── widgets.py                 # Camera tile widget, status overlay
+│
+├── utils/
+│   ├── __init__.py
+│   ├── logger.py                  # Structured logging (rotating file + console)
+│   ├── image_utils.py             # Base64 encode/decode, resize, annotate
+│   └── hardware.py                # CPU/GPU/Jetson auto-detect & optimize
+│
+├── configs/
+│   ├── cameras.yaml               # Camera sources, names, locations
+│   ├── model.yaml                 # YOLO model path, conf, classes
+│   └── app.yaml                   # MongoDB, Flask, GUI settings
+│
+├── scripts/
+│   ├── run_pipeline.py            # Entry point: start all cameras + API
+│   ├── run_gui.py                 # Entry point: GUI only
+│   └── test_camera.py             # Test single camera connection
+│
+├── requirements.txt
+├── .env                           # Secrets (never commit)
+├── .env.example
+└── README.md
