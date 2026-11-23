@@ -5,3 +5,4 @@ __pycache__/
 data/app.log
 data/alerts/
 data/alerts.jsonl
+*.log
